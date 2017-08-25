@@ -1,0 +1,46 @@
+#mainContainer {
+	width: 980px;
+}
+
+.navbar a {
+	font-size: 40px;
+	line-height:120px;
+}
+
+.navbar-nav li a {
+	line-height:120px;
+}
+
+.navbar a .caret {
+	size: 12px;
+}
+
+table {
+	font-size: 24px;
+}
+
+.alert {
+	font-size: 24px;
+}
+
+.btn-lg {
+	font-size: 24px;
+}
+
+.close {
+	size: 24px;
+}
+
+.form-control {
+	font-size: 24px;
+}
+
+.btn, button {
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+
+.btn-no-margin {
+	margin-top: 0px;
+	margin-bottom: 0px;
+}

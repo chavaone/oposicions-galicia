@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+		"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+	<session-factory>
+
+		<!-- Database connection settings -->
+		<property name="hibernate.connection.driver_class">${jdbcDriver.className}</property>
+		<property name="hibernate.connection.url">${dataSource.url}</property>
+		<property name="hibernate.connection.username">${dataSource.user}</property>
+		<property name="hibernate.connection.password">${dataSource.password}</property>
+
+		<!-- JDBC connection pool (use the built-in) -->
+		<property name="hibernate.connection.pool_size">1</property>
+
+		<!-- SQL dialect -->
+		<property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+
+		<!-- Show and print nice SQL on stdout -->
+		<property name="hibernate.show_sql">false</property>
+		<property name="hibernate.format_sql">false</property>
+		<property name="hibernate.use_sql_comments">false</property>
+
+		<!-- Mapping elements -->
+		<mapping class="es.oposiciones.modelo.dominio.Provincia"/>
+		<mapping class="es.oposiciones.modelo.dominio.Ayuntamiento"/>
+		<mapping class="es.oposiciones.modelo.dominio.Localidad"/>
+		<mapping class="es.oposiciones.modelo.dominio.Centro"/>
+
+	</session-factory>
+</hibernate-configuration>
